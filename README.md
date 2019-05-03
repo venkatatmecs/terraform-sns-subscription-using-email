@@ -13,7 +13,4 @@ See https://www.terraform.io/docs/providers/aws/r/sns_topic_subscription.html#pr
 This module creates an SNS topic and an SNS topic subscription.
 
 ## Requirements
-- Python 2.7+ installed globally on the system
-
-## Development requirements
-- Python 2.7 and 3.7 installed globally on the system
+- Python 3.7+ installed globally on the system
