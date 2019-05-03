@@ -9,6 +9,12 @@
 // Always include the type of the variable in even if it is a string (the default).
 // Always include a meaningful description of the variable and potential values.
 //
+variable "assume_role" {
+  default     = ""
+  description = "ARN of a cross-account access role to assume in order to create the subscription in another account."
+  type        = "string"
+}
+
 variable "name" {
   description = "The name of the SNS topic to create."
   type        = "string"

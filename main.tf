@@ -8,6 +8,6 @@ resource "aws_sns_topic" "topic" {
   name = "${var.name}"
 
   provisioner "local-exec" {
-    command = "aws sns subscribe --topic-arn ${aws_sns_topic.topic.arn} --protocol email --notification-endpoint ${var.email}"
+    command = "python3 ${path.module}/scripts/subscribe.py ${aws_sns_topic.topic.arn} ${var.email} ${var.assume_role}"
   }
 }
