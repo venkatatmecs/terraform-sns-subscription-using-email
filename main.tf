@@ -1,3 +1,4 @@
+#hi
 //
 // Create an SNS topic and subscribe to it using an email address. Since the address needs to be verified,
 // this will not work with the usual `aws_sns_topic_subscription` resource, so we do it via a local exec.
